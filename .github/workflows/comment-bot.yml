@@ -12,6 +12,7 @@ jobs:
       uses: peter-evans/create-or-update-comment@v1
       with:
         issue-number: 194
+        token: ${{ secrets.PAT_TOKEN }}
         repository: uccross/skyhookdm-arrow
         body: |
           This is a multi-line test comment
