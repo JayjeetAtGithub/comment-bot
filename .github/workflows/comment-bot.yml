@@ -8,6 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Debug
+      env: 
+        REF: ${{ github.event.client_payload.ref }}
+      run: |
+        echo $REF
+
     - name: Create comment
       uses: peter-evans/create-or-update-comment@v1
       with:
