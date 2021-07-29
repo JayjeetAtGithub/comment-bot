@@ -1,8 +1,8 @@
 name: Comment Bot
 
 on:
-  push:
-  pull_request:
+  repository_dispatch:
+    types: [run]
 
 jobs:
   build:
